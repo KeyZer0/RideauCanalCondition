@@ -1,6 +1,496 @@
-$.get( "http://tired.com/", function( data ) {
 
-  var source = $(data).find("#sampleDiv").html();
-  var search = source.search("text");
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rideau Canal Skateway</title>
+  <meta name="description" content="Rideau Canal Skateway - The World's Largest Skating Rink">
 
-});
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rideau Canal Skateway" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://rcs.ncc-ccn.ca/" />
+  <meta property="og:image" content="/images/branding/logo_black_fr.png" />
+  <meta property="og:description" content="Rideau Canal Skateway - The World's Largest Skating Rink" />
+  <meta property="og:site_name" content="Rideau Canal Skateway" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="Rideau Canal Skateway - The World's Largest Skating Rink">
+  <meta name="twitter:site" content="@NCC_Skateway">
+  <meta name="twitter:title" content="Rideau Canal Skateway">
+  <meta name="twitter:description" content="Rideau Canal Skateway - The World's Largest Skating Rink">
+  <meta name="twitter:creator" content="@NCC_Skateway">
+  <meta name="twitter:image" content="/images/branding/logo_black_fr.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="http://rcs.ncc-ccn.ca/images/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/styles/libs.min.css">
+  <link rel="stylesheet" href="/styles/main.min.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3"></script>
+  <![endif]-->
+
+</head>
+<body class="index">
+
+  <!--[if lt IE 8]>
+    <p class="rcs-browser-upgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header class="rcs-header">
+    <a class="rcs-logo" href="/" title="National Capital Commission">
+      <img src="/images/branding/logo_white_en.png" alt="National Capital Commission">
+    </a>
+    <a class="rcs-drawer-open" href="#" title="Open Menu">
+      <span class="menu-label sr-only sr-only-focusable">Open Menu</span>
+      <img src="/images/icons/menu.png" alt="Menu Icon" width="32px">
+    </a>
+  </header>
+
+  <nav class="rcs-drawer">
+
+  <a href="#" class="rcs-drawer-close" title="Close navigation">
+    <span class="rcs-drawer-close-label sr-only sr-only-focusable">
+      Close navigation    </span>
+    <img src="/images/icons/close.png" alt="X Icon" width="32px" >
+  </a>
+
+  <ul class="rcs-drawer-menu">
+    <li>
+      <a href="/" title="Go to Home page">
+        <img src="/images/icons/home.png" alt="House Icon">
+        <span>Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="/#ice-conditions" title="Go to Ice Conditions section">
+        <img src="/images/icons/location.png" alt="Map Icon">
+        <span>Ice Conditions</span>
+      </a>
+    </li>
+    <li>
+      <a href="/ice-experts" title="Go to Ice Experts page">
+        <img src="/images/icons/snowflake.png" alt="Go to Ice Experts page">
+        <span>Ice Experts</span>
+      </a>
+    </li>
+    <li>
+      <a href="/information" title="Go to Information page">
+        <img src="/images/icons/info.png" alt="Info Icon">
+        <span>Information</span>
+      </a>
+    </li>
+    <li>
+      <a href="/safety-tips" title="Go to Safety Tips page">
+        <img src="/images/icons/safety.png" alt="Info Icon">
+        <span>Safety Tips</span>
+      </a>
+    </li>
+    <li>
+      <a href="http://rcs.ccn-ncc.ca/">
+        <img src="/images/icons/preferences.png" alt="Français">
+        <span>Français</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="rcs-drawer-menu-social">
+    <li>
+      <a href="https://www.facebook.com/RideauCanalSkateway" target="_blank" title="Facebook">
+        <span class="sr-only sr-only-focusable">Facebook</span>
+        <img src="/images/icons/facebook.png" width="32px" alt="Facebook">
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/NCC_Skateway" target="_blank" title="Twitter">
+        <span class="sr-only sr-only-focusable">Twitter</span>
+        <img src="/images/icons/twitter.png" width="32px" alt="Twitter">
+      </a>
+    </li>
+    <li>
+      <a href="http://instagram.com/ncc_ccn/" target="_blank" title="Instagram">
+        <span class="sr-only sr-only-focusable">Instagram</span>
+        <img src="/images/icons/instagram.png" width="32px" alt="Instagram">
+      </a>
+    </li>
+  </ul>
+</nav>
+  <main class="rcs-main">
+<section class="rcs-banner-home">
+  <div class="container">
+    <div class="rcs-banner-introduction">
+      <p class="rcs-banner-logo">
+        <img src="/images/branding/logo_white_en.png" alt="National Capital Commission">
+      </p>
+      <h1 class="rcs-banner-title">The Rideau Canal Skateway</h1>
+      <h2 class="rcs-banner-record">
+        World&rsquo;s <span>Largest</span> Skating Rink
+      </h2>
+      <p class="rcs-banner-sponsor">
+        <span>Presented by</span>
+        <a href="https://www.cibc.com/ca/personal.html" target="_blank" title="Go to CIBC website">
+        <img src="https://s3.amazonaws.com/rideau-canal-skateway/cibc-150-en.png" alt="CIBC">
+        </a>
+      </p>
+    </div>
+    <div class="rcs-banner-features">
+      <div class="feature feature-conditions">
+        <a onclick="ga('send', 'event', 'link', '#ice-conditions', 'RCS-Website');" href="#ice-conditions" title="Scroll to Ice Conditions section">
+          <img src="/images/icons/location.png" alt="Map icon with marker" class="icon">
+          <div class="content">
+            <h4>Ice Conditions</h4>
+            <p><i class="fa fa-spin fa-spinner"></i></p>
+          </div>
+        </a>
+      </div>
+      <div class="feature feature-weather">
+        <a onclick="ga('send', 'event', 'link', 'https://weather.gc.ca/city/pages/on-118_metric_e.html', 'RCS-Website');" href="https://weather.gc.ca/city/pages/on-118_metric_e.html" target="_blank" title="Go to weather.gc.ca website">
+          <img src="/images/icons/sun.png" alt="Sun icon" class="icon">
+          <div class="content">
+            <h4>Weather</h4>
+            <p><i class="fa fa-spin fa-spinner"></i></p>
+          </div>
+        </a>
+      </div>
+      <div class="feature feature-experts">
+        <a onclick="ga('send', 'event', 'link', '/ice-experts', 'RCS-Website');" href="/ice-experts" title="Go to Ice Experts page">
+          <img src="/images/icons/snowflake.png" alt="Snow Flake icon" class="icon">
+          <div class="content">
+            <h4>Ice Experts</h4>
+          </div>
+        </a>
+      </div>
+      <div class="feature feature-information">
+        <a onclick="ga('send', 'event', 'link', '/information', 'RCS-Website');" href="/information" title="Go to Information page">
+          <img src="/images/icons/info.png" alt="Information icon" class="icon">
+          <div class="content">
+            <h4>Information</h4>
+          </div>
+        </a>
+      </div>
+      <div class="feature feature-safety">
+        <a onclick="ga('send', 'event', 'link', '/safety-tips', 'RCS-Website');" href="/safety-tips" title="Go to Safety Tips page">
+          <img src="/images/icons/safety.png" alt="Safety icon" class="icon">
+          <div class="content">
+            <h4>Safety Tips</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="rcs-promo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-1">
+        <img src="/images/card-cibc.png" alt="">
+      </div>
+      <div class="col-md-5">
+        <h2 class="rcs-promo-title">WIN a $250 CIBC Visa* Prepaid Gift Card!</h2>
+        <p class="rcs-promo-action"><a onclick="ga('send', 'event', 'Button', 'click', 'CIBC Visa Contest');" href="http://woobox.com/pg4thm" target="_blank" class="btn btn-lg btn-block btn-success">The contest is closed.</a></p>
+        <p class="rcs-promo-text">*Visa Int./Licensed User.</p>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <p class="text-center" style="font-size: 24px;">
+          As the days get chillier, we’re getting closer to another Skateway season. Stay tuned for more updates. We’re crossing our fingers that Mother Nature will be more cooperative this year.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="news" class="rcs-news section section-light">
+  <div class="container">
+    <h2 class="section-title">#CanalMoments</h2>
+    <div class="articles">
+      <ul class="juicer-feed" data-feed-id="rideau-canal-skateway" data-per="4" data-filter="Facebook"></ul>
+    </div>
+  </div>
+<!--
+  <div class="rcs-nokia section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <img class="rcs-nokia-logo" style="max-width: 140px;" src="https://s3.amazonaws.com/rideau-canal-skateway/nokia-logo-no-padding.png" alt="Nokia">
+          <h3 class="rcs-nokia-title">Saturday Skatedays</h3>
+          <p class="rcs-nokia-text">Join us for NOKIA Saturday Skatedays on the Rideau Canal Skateway—and rediscover the pleasures of winter on the world’s largest skating rink.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+  <div class="container">
+    <h2 class="section-title section-title-mtop">Webcams</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="rcs-livecams">
+          <a data-lity href="https://cp3.ceecam.net/static/media/9/snapshots/47/original.jpg" class="item">
+            <img src="https://cp3.ceecam.net/static/media/9/snapshots/47/original.jpg" alt="Rideau Rest Area Livecam">
+            <span class="overlay">CIBC Fifth Rest Area</span>
+            <!-- <span class="overlay">Rideau Rest Area</span> -->
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="rcs-livecams">
+          <a data-lity href="https://cp3.ceecam.net/static/media/9/snapshots/48/original.jpg" class="item">
+            <img src="https://cp3.ceecam.net/static/media/9/snapshots/48/original.jpg" alt="Bronson Rest Area">
+            <span class="overlay">Bronson Rest Area</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- <div class="col-md-6">
+        <div class="rcs-livecams">
+          <a data-lity href="https://cp3.ceecam.net/static/media/9/snapshots/25/large.jpg" class="item">
+            <img src="https://cp3.ceecam.net/static/media/9/snapshots/25/small.jpg" alt="CIBC Fifth Rest Area Livecam">
+            <div class="overlay">CIBC Fifth Rest Area</div>
+          </a>
+        </div>
+      </div> -->
+      <div class="col-md-12">
+        <div class="rcs-promo-video embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/s6nd6jA_rpU" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="ice-conditions" class="rcs-conditions section section-dark">
+  <h2 class="section-title">Ice Conditions</h2>
+  <div class="rcs-conditions-wrapper">
+    <img src="https://s3.amazonaws.com/interactive-maps/rcs-map.jpg" alt="Ice Conditions Map Overview" class="hidden-mobile">
+    <img src="https://s3.amazonaws.com/interactive-maps/rcs-map-mobile.jpg" alt="Ice Conditions Map Overview" class="hidden-desktop">
+    <div class="rcs-conditions-overlay conditions-status">
+      <div class="content"></div>
+      <a onclick="ga('send', 'event', 'link', 'https://ncc-ccn.maps.arcgis.com/apps/View/index.html?appid=795623808c5c49388aa7dc5f94890a40', 'RCS-Website');" href="https://ncc-ccn.maps.arcgis.com/apps/View/index.html?appid=795623808c5c49388aa7dc5f94890a40" target="_blank" title="Launch interactive map application" class="btn btn-default btn-block">Launch interactive map</a>
+    </div>
+    <div class="rcs-conditions-overlay conditions-legend">
+      <h4>Legend</h4>
+      <ul class="legend">
+        <li>
+          <a href="#" title="Click to view description" data-toggle="modal" data-target="#modal-very-good">
+            <svg overflow="hidden" width="30" height="30"><defs></defs><path fill="rgb(44, 123, 182)" fill-opacity="0.75" stroke="rgb(26, 26, 26)" stroke-opacity="0.75" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" path="M -10,-10 L 10,0 L 10,10 L -10,10 L -10,-10 E" d="M-10-10L 10 0L 10 10L-10 10L-10-10" fill-rule="evenodd" stroke-dasharray="none" dojoGfxStrokeStyle="solid" transform="matrix(1.00000000,0.00000000,0.00000000,1.00000000,15.00000000,15.00000000)"></path></svg>
+            <span>Very Good</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Click to view description" data-toggle="modal" data-target="#modal-good">
+            <svg overflow="hidden" width="30" height="30"><defs></defs><path fill="rgb(171, 217, 233)" fill-opacity="0.75" stroke="rgb(26, 26, 26)" stroke-opacity="0.75" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" path="M -10,-10 L 10,0 L 10,10 L -10,10 L -10,-10 E" d="M-10-10L 10 0L 10 10L-10 10L-10-10" fill-rule="evenodd" stroke-dasharray="none" dojoGfxStrokeStyle="solid" transform="matrix(1.00000000,0.00000000,0.00000000,1.00000000,15.00000000,15.00000000)"></path></svg>
+            <span>Good</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Click to view description" data-toggle="modal" data-target="#modal-fair">
+            <svg overflow="hidden" width="30" height="30"><defs></defs><path fill="rgb(253, 174, 97)" fill-opacity="0.75" stroke="rgb(26, 26, 26)" stroke-opacity="0.75" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" path="M -10,-10 L 10,0 L 10,10 L -10,10 L -10,-10 E" d="M-10-10L 10 0L 10 10L-10 10L-10-10" fill-rule="evenodd" stroke-dasharray="none" dojoGfxStrokeStyle="solid" transform="matrix(1.00000000,0.00000000,0.00000000,1.00000000,15.00000000,15.00000000)"></path></svg>
+            <span>Fair</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Click to view description" data-toggle="modal" data-target="#modal-poor">
+            <svg overflow="hidden" width="30" height="30"><defs></defs><path fill="rgb(215, 25, 28)" fill-opacity="0.75" stroke="rgb(26, 26, 26)" stroke-opacity="0.75" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" path="M -10,-10 L 10,0 L 10,10 L -10,10 L -10,-10 E" d="M-10-10L 10 0L 10 10L-10 10L-10-10" fill-rule="evenodd" stroke-dasharray="none" dojoGfxStrokeStyle="solid" transform="matrix(1.00000000,0.00000000,0.00000000,1.00000000,15.00000000,15.00000000)"></path></svg>
+            <span>Poor</span>
+          </a>
+        </li>
+        <li>
+          <svg overflow="hidden" width="30" height="30"><defs></defs><path fill="rgb(71, 71, 71)" fill-opacity="0.75" stroke="rgb(26, 26, 26)" stroke-opacity="0.75" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" path="M -10,-10 L 10,0 L 10,10 L -10,10 L -10,-10 E" d="M-10-10L 10 0L 10 10L-10 10L-10-10" fill-rule="evenodd" stroke-dasharray="none" dojoGfxStrokeStyle="solid" transform="matrix(1.00000000,0.00000000,0.00000000,1.00000000,15.00000000,15.00000000)"></path></svg>
+          <span>Closed</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Legend Modals -->
+<!-- Very Good Conditions -->
+<div class="modal fade" id="modal-very-good" tabindex="-1" role="dialog" aria-labelledby="#modal-very-good-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modal-very-good-title">Ice Condition: Very good</h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Limited number of pressure cracks</li>
+          <li>Overall ice is very hard and durable</li>
+          <li>Clean ice with a smooth surface</li>
+          <li>Very good gliding surface</li>
+          <li>Limited number of rough areas</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Good Conditions -->
+<div class="modal fade" id="modal-good" tabindex="-1" role="dialog" aria-labelledby="#modal-good-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modal-good-title">Ice Condition: Good</h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>A few pressure cracks</li>
+          <li>Hard ice surface</li>
+          <li>Clean ice with a number of smooth surface areas</li>
+          <li>Good gliding surface</li>
+          <li>Some patchy or rough areas</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fair Conditions -->
+<div class="modal fade" id="modal-fair" tabindex="-1" role="dialog" aria-labelledby="#modal-fair-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modal-fair-title">Ice Condition: Fair</h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Many pressure cracks</li>
+          <li>Worn/soft ice surface, due to mild temperatures</li>
+          <li>Snow accumulation on the ice and/or a pebbled surface</li>
+          <li>Poor gliding surface</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Poor Conditions -->
+<div class="modal fade" id="modal-poor" tabindex="-1" role="dialog" aria-labelledby="#modal-poor-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modal-poor-title">Ice Condition: Poor</h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Numerous pressure cracks</li>
+          <li>Soft ice surface with several rough or soft/wet spots</li>
+          <li>Risk of skate blades digging in and scarring the surface</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <!-- Sponsors -->
+  <section class="rcs-sponsors section section-dark">
+  <div class="container">
+    <h2 class="section-title">Thank you to our sponsors</h2>
+
+    <div class="rcs-main-sponsor text-center">
+      <p>Presented by</p>
+              <a href="https://www.cibc.com/ca/personal.html" target="_blank" title="Go to CIBC website"><img src="https://s3.amazonaws.com/rideau-canal-skateway/cibc-150-en.png" alt="CIBC"></a>
+          </div>
+    <div class="carousel">
+      <div class="item"><img src="https://s3.amazonaws.com/rideau-canal-skateway/nokia-logo-new.png" alt="Nokia"></div>
+      <div class="item"><img src="https://s3.amazonaws.com/rideau-canal-skateway/olg-logo-new.png" alt="Ontario Lottery and Gaming Corporation (OLG)"></div>
+      <div class="item"><img src="https://s3.amazonaws.com/rideau-canal-skateway/pepsi-logo-new.png" alt="Pepsi"></div>
+      <div class="item"><img src="https://s3.amazonaws.com/rideau-canal-skateway/ceecam-logo-new.png" alt="CEECAM Corporation"></div>
+      <div class="item"><img style="padding: 95px 10px 0 10px;" src="https://s3.amazonaws.com/rideau-canal-skateway/beaver-tail.png" alt="BeaverTails"></div>
+      <div class="item"><img style="padding: 80px 20px;" src="https://s3.amazonaws.com/rideau-canal-skateway/access-storage.png" alt="Access Storage"></div>
+      <div class="item"><img style="padding: 30px;" src="https://s3.amazonaws.com/rideau-canal-skateway/cube-it.png" alt="Cube It"></div>
+    </div>
+  </div>
+</section>
+  <footer class="rcs-footer">
+    <div class="container">
+
+            <div class="row rcs-contact-info">
+        <div class="col-sm-8 col-md-9">
+          <h4>Contact Us</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Client Services</h5>
+              <ul class="list-unstyled">
+                <li>Telephone: 613-239-5000 or 1-800-465-1867 (toll-free)</li>
+                <li><a href="http://www.geds.gc.ca/en/GEDS?pgid=014&dn=ou%3DNCC-CCN%2C+o%3DGC%2C+c%3DCA" taget="_blank">Employee directory</a>: 613-239-5678</li>
+                <li>TTY: 613-239-5090 or 1-866-661-3530 (toll-free)</li>
+                <li>Email: <a href="mailto:info@ncc-ccn.ca">info@ncc-ccn.ca</a></li>
+              </ul>
+              <p>Monday to Friday (except holidays)<br>from 8:30 am to 5 pm (Eastern time)</p>
+            </div>
+            <div class="col-md-6">
+              <h5>Emergency Service (24-hour)</h5>
+              <p>Telephone: 613-239-5353</p>
+              <h5>Mailing Address</h5>
+              <address>
+                National Capital Commission <br>
+                202-40 Elgin Street <br>
+                Ottawa ON K1P 1C7
+              </address>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3">
+          <h4>Media</h4>
+          <h5><a href="http://www.ncc-ccn.gc.ca/about-ncc/media-room/news-archive?tid_news_topic=18" target="_blank">Latest News</a></h5>
+          <h5>Contact</h5>
+          <p>
+            Cédric Pelletier<br>
+            Media Relations <br>
+            613-239-5678 ext. 5709 <br>
+            <a href="mailto:cedric.pelletier@ncc-ccn.ca">cedric.pelletier@ncc-ccn.ca</a>
+          </p>
+          <h5>Social Networks</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/RideauCanalSkateway" taget="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/NCC_Skateway" taget="_blank">Twitter</a> - <a href="https://twitter.com/search?q=%23CanalMoments&src=typd" taget="_blank">#CanalMoments</a></li>
+            <li><a href="http://instagram.com/ncc_ccn/" taget="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <p>&copy;2017 Rideau Canal Skateway - <a href="http://www.ncc-ccn.gc.ca">National Capital Commission</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/scripts/libs.min.js" type="text/javascript"></script>
+  <script src="//assets.juicer.io/embed.js" type="text/javascript"></script>
+  <script src="/scripts/main.min.js" type="text/javascript"></script>
+
+  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-22979008-1','auto');ga('set', 'contentGroup1', 'Rideau-Canal-Skateway');ga('send','pageview');
+  </script>
+</body>
+</html>
