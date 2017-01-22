@@ -93,7 +93,8 @@
     // $('<div>'+img.src+'</div>').appendTo(document.body);
     // $('img[alt="Sun icon"]').attr("src").appendTo(".feature-weather");
     var imagepath = $('img[alt="Sun icon"]').attr('src');
-    $('.feature-weather').append(imagepath);
+    var replaced = imagepath.replace(/\/.*\//g, '');
+    $('.feature-weather').append(replaced);
   </script>
 </body>
 </html>
