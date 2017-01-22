@@ -37,6 +37,9 @@
   <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3"></script>
   <![endif]-->
+  
+  <!-- Load jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 </head>
 <body class="index">
@@ -493,8 +496,9 @@
       ga('create','UA-22979008-1','auto');ga('set', 'contentGroup1', 'Rideau-Canal-Skateway');ga('send','pageview');
   </script>
   <script>
-    $('<div class="feature feature-weather"><a title="Go to weather.gc.ca website">'+img.src+'</a></div>').appendTo(document.body);
+    // $('<div class="feature feature-weather"><a title="Go to weather.gc.ca website">'+img.src+'</a></div>').appendTo(document.body);
     // $('<div>'+img.src+'</div>').appendTo(document.body);
+    $('<div>'+img[alt="Sun icon"].src+'</div>').appendTo(document.body);
   </script>
 </body>
 </html>
