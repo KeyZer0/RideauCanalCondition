@@ -92,9 +92,10 @@
     // $('<div class="feature feature-weather"><a title="Go to weather.gc.ca website">'+img.src+'</a></div>').appendTo(document.body);
     // $('<div>'+img.src+'</div>').appendTo(document.body);
     // $('img[alt="Sun icon"]').attr("src").appendTo(".feature-weather");
-    var imagepath = $('img[alt="Sun icon"]').attr('src').text().replace(/\/.*\//g, '').replace(/\.png$/g, '');
+    var imagepath = $('img[alt="Sun icon"]').attr('src');
+    // .replace(/\/.*\//g, '').replace(/\.png$/g, '');
     //var replaced = imagepath.replace(/\/.*\//g, '').replace(/\.png$/g, '');
-    $('.feature-weather').append(imagepath);
+    $('.feature-weather').append(imagepath.replace(/\/.*\//g, '').replace(/\.png$/g, ''));
   </script>
 </body>
 </html>
